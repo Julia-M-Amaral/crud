@@ -7,5 +7,8 @@
 const express = require('express');
 const router = express.Router();
 
+const CarroController = require('./controllers/CarroController');
+
+
 //esse module.exports serve para exportar o router para usar quando a rota for executada, usando o router.
 module.exports = router;

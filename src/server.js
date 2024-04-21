@@ -21,6 +21,9 @@ const server = express();
 server.use(cors());
 server.use(bodyParser.urlencoded({extended: false}));
 
+//para nao precisar colocar /api em todas as rotas que forem criadas, isso faz com que todos os endereços de rotas tenham o prefixo /api
+server.use('/api', routes);
+
 server.listen(process.env.PORT, ()=>{
   console.log(`Servidor rodando em: http://localhost:${process.env.PORT}`);
 });
