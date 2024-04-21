@@ -9,6 +9,8 @@ const router = express.Router();
 
 const CarroController = require('./controllers/CarroController');
 
+//criar rota para pegar todos os carros no arquivo routes
+router.get('/carros', CarroController.buscarTodos);
 
 //esse module.exports serve para exportar o router para usar quando a rota for executada, usando o router.
 module.exports = router;
