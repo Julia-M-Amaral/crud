@@ -5,5 +5,7 @@
 //chamando o express para utilizar no arquivo routes.
 
 const express = require('express');
-
 const router = express.Router();
+
+//esse module.exports serve para exportar o router para usar quando a rota for executada, usando o router.
+module.exports = router;
