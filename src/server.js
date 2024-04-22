@@ -20,6 +20,7 @@ const routes = require('./routes.js');
 const server = express();
 server.use(cors());
 server.use(bodyParser.urlencoded({extended: false}));
+server.use(bodyParser.json());
 
 //para nao precisar colocar /api em todas as rotas que forem criadas, isso faz com que todos os endereços de rotas tenham o prefixo /api
 server.use('/api', routes);
